@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     
-    }
-        body{
+    } /*  over all element select in universal selector   */
+         body{
 
    
             height: 100vh;
@@ -17,53 +17,53 @@
         
         
          
-    }
-     
+    }  /* index.html body background picture is targeted through css */
+      
     
     
     
     header{
     width: 100%;
-    background-color:rgba(11, 12, 12, 0.301);
+    background-color:rgba(20, 14, 14, 0.295);
     display: flexbox ;
     height: 10vh;
-    }
+    }   /*  in header  home , about etc color  and height is targated   */
+
+
     .navigation{
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+    } /*  in header  . home  about etc  is align means ( in center and want row wise which implemented)  */  
     
     
     
      a {
         position:relative;
          display: inline-block;
-        color: rgb(36, 60, 196);
+        color:white;
         text-decoration:none;
-        text-align: left; 
-     }
+       
+     } /*  a is  anchor tag  through a home , about color  and postion is specified      */ 
+
       a::before{
         content: "";
         position: relative;
         left: 0;
-
-       
-        
-        background: rgb(29, 61, 165);
         border-radius: 5px;
-         transform:scaleX(0);  } 
+         transform:scaleX(0); 
+        color: white; }   /*  before means when we not hover on home, about then  this things is  implemented */
     
     a:hover{
         transform:scaleX(1);
        
-        transition-duration: 0.4s;
+        transition-duration: 0.1s;
         background-color: rgb(190, 8, 8);
         font-weight: bold;
-        color: rgba(241, 241, 241, 0.938);
+        color: rgba(23, 67, 161, 0.938);
         bottom: -6px;
     
-    }
+    }   /*  after means when we  hover on home, about then  this things is  implemented */
     
     
      .navigation a{
@@ -77,7 +77,7 @@
     
     
     
-    }
+    }    /* means .navigation class  and in navigation class anchortag a home about etc in between padding and margin   */
     img{
         width: 50px;
         height: 45px;
@@ -85,7 +85,9 @@
         float: right;
         margin-right: 20px;
          
-     }
+     } /*  logo image in the header  */
+
+
     .div{
 
 font-size:20px;
@@ -93,31 +95,29 @@ transform: scalex(1);
 color: white;
 
 
-    }
+    } /* what is online lms  below the header color and font size targated thorugh css */
      .div:hover{
         transform:scalex(1);
         color: rgb(30, 165, 82);
         font-size: 21px;
-    } 
+    }  /* when hover on what is online lms then color  and font size wil be like */ 
 #menu{
     display: none;
 
-}
-/*contact.html  file*/
+} /* menu button wil not show and show when the screen size is small(width is smaller than 534) like phone */
+
+
+
 body.zain{
   background-image: url(background2.jpg);
   background-repeat: no-repeat;
   
-}
-
-
- .background{
-    background-image: url(home.jpg);
-
- }
+}/*contact.html  file backgound */
 
 
 
+
+/* this media querry is active when the screen size width is smaller than    534 */
      
     @media  (max-width: 534px) {
        #menu{
@@ -144,12 +144,7 @@ body.zain{
        .bodyM{
         padding-top: 7rem;
        }
-       
-      /* #home-button{display: none;}
-       #about-button{display: none;}
-       #service-button{display: none;}
-       #content-button{display: none;}
-       */
+     
        
           a::before{
             content: "";
@@ -222,27 +217,6 @@ body.zain{
         float: right
          
      }
-    
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  }
     
